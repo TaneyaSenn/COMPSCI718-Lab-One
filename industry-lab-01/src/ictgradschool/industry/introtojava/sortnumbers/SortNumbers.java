@@ -17,7 +17,10 @@ public class SortNumbers {
 		int third = 0;
 		int fourth = 0;
 		// Answer here
-
+		first = number1;
+		second = number2;
+		third = number3;
+		fourth = number4;
 		//
 		System.out.println("The numbers are: " + first + ", " + second + ", " + third + ", " + fourth);
 	}
