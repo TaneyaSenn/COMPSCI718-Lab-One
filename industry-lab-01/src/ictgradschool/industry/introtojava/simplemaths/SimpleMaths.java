@@ -14,7 +14,8 @@ public class SimpleMaths {
     public double kilogramsToPounds(int kilograms) {
         double pounds = 0.0;
         // Answer here
-
+        kilograms * 2.20462 = pounds;
+//        pounds = kilogramsToPounds(kilograms) * 2.20462;
         //
         System.out.println(kilograms + " kgs is " + pounds + " pounds");
         return pounds;
@@ -26,7 +27,8 @@ public class SimpleMaths {
     public double convertCelsiusToFahrenheit(double celsius) {
         double farenheit = 0.0;
         // Answer here
-
+        celsius * (9 / 5) + 32 = farenheit
+//        farenheit = 32 + (9/5) * celsius;
         //
         System.out.println(celsius + " degrees Celsius is " + farenheit + " degrees Fahrenheit");
         return farenheit;
@@ -38,7 +40,7 @@ public class SimpleMaths {
     public double getCompoundInterestValue(double principal, double rate, int years) {
         double value = 0;
         // Answer here
-
+        value = principal * Math.pow((1 + (rate / 100)), years);
         //
         System.out.println("Amount at the end of " + years + " years: $" + value);
         return value;
@@ -50,7 +52,7 @@ public class SimpleMaths {
     public double getMyBMI(double weight, double height) {
         double myBMI = 0;
         // Answer here
-
+        myBMI = weight / (Math.pow(height, 2));
         //
         System.out.println("Your BMI is " + myBMI);
         return myBMI;
@@ -62,7 +64,7 @@ public class SimpleMaths {
     public double getSphereVolume(double radius) {
         double volume = 0;
         // Answer here
-
+        volume = (4 / 3) * Math.PI * Math.pow(radius, 3);
         //
         System.out.println("Volume is " + volume + " cubic cms.");
         return volume;
@@ -75,7 +77,8 @@ public class SimpleMaths {
         int weeks = 0;
         int remainingDays = 0;
         // Answer here
-
+        weeks = days / 7;
+        remainingDays = days % 7;
         //
         System.out.println("This is " + weeks + " weeks and " + remainingDays + " days.");
     }
@@ -86,7 +89,7 @@ public class SimpleMaths {
     public void findSmallerInteger(int a, int b) {
         int smallerInt = 0;
         // Answer here
-
+        smallerInt = Math.min(a, b);
         //
         System.out.println(smallerInt);
     }
